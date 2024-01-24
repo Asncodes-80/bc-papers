@@ -2,7 +2,8 @@
   "name": "ts-bc",
   "version": "1.0.0",
   "description": "Comprehensive Block chain service",
-  "main": "index.js",
+  "type": "commonjs",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon ./app",
@@ -34,6 +35,7 @@
   },
   "dependencies": {
     "body-parser": "^1.20.2",
+    "colorts": "^0.1.63",
     "cors": "^2.8.5",
     "crypto-js": "^4.2.0",
     "dotenv": "^16.4.0",
