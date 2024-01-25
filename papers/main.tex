@@ -397,4 +397,42 @@ spend} مورد بررسی قرار می‌گیرد که یک کاربر نتو�
 ساخت آدرسی که مشخص می‌کند تراکش‌ها باید از چه کانالی انجام شوند. برای مثال زمانی
 که یک نود آفلاین است ممکن است این ایده و رویکرد استفاده شود.
 
+محتوای بلاک چین زیر به صورت شبیه‌سازی شده، به شکل زیر می‌باشد:
+
+\begin{LTR}
+    \begin{lstlisting}
+    [
+        {
+            "timestamp": "Genesis time",
+            "transactions": [
+                "Genesis block"
+            ],
+            "previousHash": "Genesis block",
+            "hash": "ed46325cd9a7f383fd982770d2acc70712115e98f690225810bbf0dcd7d54783",
+            "nonce": 1,
+            "validator": "Genesis block",
+            "signature": "Genesis block"
+        },
+        {
+            "timestamp": "1706167941159",
+            "transactions": [],
+            "previousHash": "ed46325cd9a7f383fd982770d2acc70712115e98f690225810bbf0dcd7d54783",
+            "hash": "5a7e6c1d226f002b9e6cd7266a2f3492f59a3a44ee42e9bd61aacf09a3f370de",
+            "nonce": 1,
+            "validator": "",
+            "signature": ""
+        },
+        {
+            "timestamp": "1706168456124",
+            "transactions": [],
+            "previousHash": "5a7e6c1d226f002b9e6cd7266a2f3492f59a3a44ee42e9bd61aacf09a3f370de",
+            "hash": "464a15adc7be56d1c3d10e06efb93e1c5a725f240685b1e74f92eaf4e405862c",
+            "nonce": 1,
+            "validator": "",
+            "signature": ""
+        }
+    ]
+    \end{lstlisting}
+\end{LTR}
+
 \end{document}
