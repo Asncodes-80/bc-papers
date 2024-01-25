@@ -1,5 +1,3 @@
-import color from "colorts";
-
 const getTimestamp = (): string => new Date().toISOString();
 
 type LoggingType = "info" | "warn" | "error" | "debug";
@@ -12,7 +10,7 @@ export default (
 ) =>
   console[type](
     getTimestamp(),
-    color(`[${type.toUpperCase()}]`).bgYellow,
+    `[${type.toUpperCase()}]`,
     `[${namespace}] [${message}]`,
-    object ? object : undefined
+    object ? object : ""
   );
