@@ -7,6 +7,7 @@ import { API_PREFIX } from "./config/config";
 import logging from "./config/logging";
 import ServerConfig from "./config/config";
 import { serverHealthCheck } from "./controllers/helper";
+import { blocksStatus, mineBlock } from "./controllers";
 
 const HTTP_PORT: string | number = process.env.HTTP_PORT || 8000;
 const NAMESPACE: string = "Server";
@@ -43,6 +44,8 @@ app.use(bodyParser.json());
 
 // Routes
 app.get(`${API_PREFIX}/check`, serverHealthCheck);
+app.get(`${API_PREFIX}/blocks`, blocksStatus);
+app.post(`${API_PREFIX}/mine`, mineBlock);
 
 /** Notfound middleware */
 app.use((_: Request, res: Response, next: NextFunction) =>
